@@ -37,7 +37,7 @@ int my_strncmp (char s1[], char s2[])
 
 char *my_strcpy (char s1[], char s2[])
 {
-	int i = 0
+	int i = 0;
 	
 	while (s1[i] && s1[i] != '\0')
 		
