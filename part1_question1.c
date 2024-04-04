@@ -34,3 +34,20 @@ int my_tolower (char c)
 	
 	return c;
 }
+
+int main ()
+{
+	char c;
+	
+	my_isdigit(c);
+	
+	my_isalpha(c);
+	
+	my_isupper(c);
+	
+	my_toupper(c);
+	
+	my_tolower(c);
+	
+	return 0;
+}
