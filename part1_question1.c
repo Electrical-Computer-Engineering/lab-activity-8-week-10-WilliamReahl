@@ -2,52 +2,67 @@
 
 int my_isalpha (char c)
 {
-	return c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z';
+	if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z')
+		return 1;
+	else
+		return 0;
 }
 
 int my_isdigit (char c)
 {
-	return c >= '0' && c <= '9';
+	if (c >= '0' && c <= '9')
+		return 1;
+	else
+		return 0;
 }
 
 int my_isupper (char c)
 {
-	return c >= 'A' && c <= 'Z';
+	if (c >= 'A' && c <= 'Z')
+		return 1;
+	else
+		return 0;
 }
 
 int my_toupper (char c)
 {
 	if (c >= 'a' && c <= 'z')
-	{
-		return c - 'a' + 'A';
-	}
-	
-	return c;
+		c = c - 'a' + 'A';
+		return 1;
+	else
+		return 0;
 }
 
 int my_tolower (char c)
 {
 	if (c >= 'A' && c <= 'Z')
-	{
-		return c - 'A' + 'a';
-	}
-	
-	return c;
+		c = c - 'A' + 'a';
+		return 1;
+	else
+		return 0;
 }
 
 int main ()
 {
-	char c;
+	char x = 'c';
+	int a = my_isaplha (c);
+	int b = my_isdigit (c);
+	int c = my_isupper (c);
+	int d = my_toupper (c);
+	int e = my_tolower (c);
 	
-	my_isdigit(c);
+	printf ("%c\n", x);
 	
-	my_isalpha(c);
+	printf ("%d for %c\n", a, x);
 	
-	my_isupper(c);
+	printf ("%d for %c\n", b, x);
 	
-	my_toupper(c);
+	printf ("%d for %c\n", c, x);
 	
-	my_tolower(c);
+	printf ("%d for %c\n", d, x);
+	
+	printf ("%d for %c\n", e, x);
 	
 	return 0;
 }
+
