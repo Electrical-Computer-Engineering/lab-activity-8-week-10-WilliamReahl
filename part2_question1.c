@@ -35,7 +35,7 @@ int my_strncmp (char s1[], char s2[])
 			return 1;
 }
 
-char *my_strcpy (char s1[], char s2[])
+char* my_strcpy (char s1[], char s2[])
 {
 	int i = 0;
 	
@@ -45,9 +45,23 @@ char *my_strcpy (char s1[], char s2[])
 		i++;
 }
 
-int my_strcat (char s1[], char s2[])
+char* my_strcat (char s1[], char s2[])
 {
+	int i = 0;
 	
+	while (s1[i] != '\0')
+		
+		i++;
+		
+	while (s2[i] != '\0')
+	
+		s1[] = s2[];
+		s1[]++;
+		s2[]++;
+		
+	s1[] = '\0';
+	
+	return = s1[];
 }
 
 int my_reverse (char s1[], char s2[])
