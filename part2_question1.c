@@ -1,6 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int my_stringlength (char s1[])
+{
+	int i = 0;
+	
+	while (s1[i] != '\0')
+	
+		i++;
+	
+	return i;
+}
+
 int my_strcmp (char s1[], char s2[])
 {
 	int i = 0;
@@ -61,12 +72,25 @@ char* my_strcat (char s1[], char s2[])
 		
 	s1[] = '\0';
 	
-	return = s1[];
+	return s1[];
 }
 
-int my_reverse (char s1[], char s2[])
+char* my_reverse (char s1[])
 {
+	int i = my_stringlength;
+	char start = s1[];
+	char end = s1[] + i - 1;
 	
+	while (star < end)
+	{
+		char temp = start;
+		start = end;
+		end = temp;
+		start++;
+		end--;
+	}
+	
+	return s1[];
 }
 
 int main ()
@@ -80,4 +104,14 @@ int main ()
 	printf ("%d for %s and %s", a, A, B);
 	
 	printf ("%d for abcd and abcd", my_strcmp ("abcd", "abcd"));
+	
+	printf ("%d for abcd and abcd", my_strncmp ("abcd", "abcd"));
+	
+	printf ("Copied string", my_strcpy ("A", "B"));
+	
+	printf ("String added", my_strcat ("A", "B"));
+	
+	printf ("String reversed", my_reverse ("A"));
+
+	return 0;
 }
